@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <title>QuantLib/GPU</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div id="header" class="center">
+    <div class="maxwidth">
+      <div class="widthfix" id="headerimg">
+      </div>
+    </div>
+  </div>
+  <div class="center">
+    <div class="maxwidth">
+      <div id="pagecontent" class="widthfix">
+        <h1 id="quantlib-gpu">FinanceBench</h1>
+        <p>FinanceBench is aimed at those who work with financial code to see how certain code paths can be targeted for accelerators. We utilized the original <a href="http://quantlib.org">QuantLib</a> software framework and samples to port four existing applications for quantitative finance.</p>
+        <h3 id="get-the-code">Get The Code</h3>
+        <p>All of the source code is available on GitHub. We have a few options available for download.</p>
+        <p><a href="https://github.com/cavazos-lab/FinanceBench">GitHub Repository</a></p>
+        <p><a href="https://github.com/cavazos-lab/FinanceBench/tarball/master">Download Tarball</a></p>
+        <p><a href="https://github.com/cavazos-lab/FinanceBench/tarball/master">Download ZIP</a></p>
+        
+        <h2 id="benchmarks">Benchmarks</h2>
+        <ul>
+          <li><strong>Black-Sholes</strong> &mdash; Black-Sholes-Merton Process with Analytic European Option engine (European Option Test)</li>
+          <li><strong>Monte-Carlo</strong> &mdash; QMC (Sobol) Monte-Carlo method (Equity Option Example)</li>
+          <li><strong>Bonds</strong> &mdash; Fixed-rate bond with flat forward curve</li>
+          <li><strong>Repo</strong> &mdash; Securities repurchase agreement</li>
+        </ul>
+        <h2 id="target-languages">Target Languages</h2>
+        <ul>
+          <li>C</li>
+          <li>CUDA</li>
+          <li>OpenCL</li>
+          <li>HMPP</li>
+          <li>OpenACC</li>
+          <li>OpenMP</li>
+        </ul>
+        <h2 id="related-research">Related Research</h2>
+        <p>Any work that uses these codes should cite the following paper:</p>
+        <p>Grauer-Gray S, Killian W, Searles R, Cavazos J, &quot;Accelerating Financial Applications on the GPU&quot; in Proceedings of the 6th Workshop on General Purpose Processor Using Graphics Processing Units, GPGPU-6, (New York, NY, USA), pp. 127–136, ACM, 2013.</p>
+        <p>This paper and the corresponding presentation are available for download.</p>
+        <p><a href="AcceleratingFinancialApplicationsOnTheGPU-paper.pdf">Download Paper</a></p>
+        <p><a href="AcceleratingFinancialApplicationsOnTheGPU-presentation.pdf">Download Presentation</a></p>
+        <h3>Contributors</h3>
+        <ul>
+          <li><a href="https://www.eecis.udel.edu/~cavazos">John Cavazos</a>, Principle Investigator</li>
+          <li><a href="https://www.eecis.udel.edu/~grauerg">Scott Grauer-Gray</a></li>
+          <li><a href="https://www.eecis.udel.edu/~wkillian">William Killian</a></li>
+          <li><a href="https://www.eecis.udel.edu/~searles">Robert Searles</a></li>
+        </ul>
+        <h2 id="code-modifications">Code Modifications</h2>
+        <p>The original QuantLib samples were written in C++. QuantLib is a C++ library. Unfortunately, languages like OpenCL, CUDA, and OpenACC cannot directly operate on C++ data structures, and virtual function calls are not possible. Because of this problem, all of the existing code had to be &quot;flattened&quot; to C code. We used a debugger is used to step through the code paths of each application and see what lines of QuantLib code are executed for each application, and manually flattened all of the QuantLib code.</p>
+        <h4 id="acknowledgements">Acknowledgements</h4>
+        <img id="jpmc" src="jpmorgan-chase-co-logo.png">
+        <p>This work was funded in part by JPMorgan Chase as part of the Global Enterprise Technology (GET) Collaboration.</p>
+        <p>&copy; 2012-2014 University of Delaware</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
