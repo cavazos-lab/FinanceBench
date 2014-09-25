@@ -18,19 +18,20 @@ Directions (tested for Linux-based systems w/ gcc/g++ compiler, NVIDIA GPU, and 
 For CUDA/OpenCL codes (CUDA available for each application, OpenCL available for Black-Scholes
 and Monte-Carlo):
 
-    1. Set the PATH and LD_LIBRARY_PATH environment variables to point to the appropriate locations for CUDA/OpenCL.
-    2. Navigate to CUDA/OpenCL folder in target application.
-    3. Run Makefile (by using "make" command).
-    4. Application executable should be create and can be run.
+1. Set the PATH and LD_LIBRARY_PATH environment variables to point to the appropriate locations for CUDA/OpenCL.
+2. Navigate to CUDA/OpenCL folder in target application.
+3. Run Makefile (by using "make" command).
+4. Application executable should be create and can be run.
 
 For HMPP/OpenACC Codes:
 
-    1. Set the PATH and LD_LIBRARY_PATH environment variables to point to the appropriate locations for CUDA/OpenCL.
-    2. Set the environment variables needed for the HMPP/OpenACC compilation environment.
-    3. Navigate to HMPP/OpenACC folder in target application.
-    4. Run Makefile (by using "make" command).
-    5. Application executable should be create and can be run.
+1. Set the PATH and LD_LIBRARY_PATH environment variables to point to the appropriate locations for CUDA/OpenCL.
+2. Set the environment variables needed for the HMPP/OpenACC compilation environment.
+3. Navigate to HMPP/OpenACC folder in target application.
+4. Run Makefile (by using "make" command).
+5. Application executable should be create and can be run.
 
 For CPU/OpenMP Codes (assuming using g++ compiler):
-    1. Run Makefile (by using "make" command).
-    2. Application executable should be create and can be run.
+
+1. Run Makefile (by using "make" command).
+2. Application executable should be create and can be run.
