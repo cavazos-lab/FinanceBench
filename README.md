@@ -1,10 +1,10 @@
 FinanceBench
 ------------
 
-Scott Grauer-Gray <grauerg@udel.edu>
-Will Killian <killian@udel.edu>
-Robert Searles <rsearles@udel.edu>
-John Cavazos <cavazos@udel.edu>
+* Scott Grauer-Gray <grauerg@udel.edu>
+* Will Killian <killian@udel.edu>
+* Robert Searles <rsearles@udel.edu>
+* John Cavazos <cavazos@udel.edu>
 
 This contains codes for Black-Scholes, Monte-Carlo, Bonds, and Repo financial applications which can be run on the CPU and GPU.  All the codes are described in the following paper and any work that uses these codes should cite this paper:
 
